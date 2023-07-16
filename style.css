@@ -56,7 +56,7 @@ nav li a{
     color: #131313;
 }
 
-.banner-discription, .sponsors-discription{
+.banner-discription, .sponsors-discription, .feature-discription{
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
@@ -148,6 +148,46 @@ main{
 .sponsor-img-container img{
     width: 165px;
 }
+/* Feature Section */
+.ten-year-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+}
+.ten-year-badge h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.ten-year-badge p{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.features{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-contant .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.card-heading{
+    color:  #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 
 
 
