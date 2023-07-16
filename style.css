@@ -50,13 +50,13 @@ nav li a{
     margin: 0 auto;
 }
 
-.banner-title{
+.banner-title, .sponsors-title{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
 
-.banner-discription{
+.banner-discription, .sponsors-discription{
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
@@ -134,6 +134,20 @@ main{
     margin-top: 5px;
 }
 
+/* Some Cards Section */
+.sponsor-container{
+    text-align: center;
+}
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+.sponsor-img-container img{
+    width: 165px;
+}
 
 
 
@@ -141,20 +155,31 @@ main{
 /* Mobile Screen */
 
 @media screen and (max-width: 576px) {
-    header{
+    header, .section-title, .facts-discription{
         padding: 20px;
     }
+    .section-title{
+        margin-bottom: 1px;
+    }
+    .facts-discription{
+        margin-top: 2px;
+    }
     nav,
-    .team-container
+    .team-container,
+    .facts-card-container,
+    .sponsor-img-container
     {
         flex-direction: column;
     }
     .team-img-container{
         grid-template-columns: 1fr;
     }
-    .team-content{
+    .team-content, .facts-card-container{
         padding-right: 20px;
         padding-left: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
     .banner-title{
         font-size: 1.8rem;
@@ -164,10 +189,11 @@ main{
 
 /* For Medium Screen */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header{
+    header {
         padding: 50px;
     }
-    nav, .team-container{
+    nav, .team-container, .sponsor-img-container 
+    {
         flex-direction: column;
     }
 }
